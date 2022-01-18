@@ -33,4 +33,5 @@ colombia.push(new Persona("Neider", 3000000));
 colombia.push(new Persona("Jhon Mario", 1800000));
 colombia.push(new Persona("Andrés", 9000000));
 colombia.push(new Persona("Felipe", 9000000));
+colombia.push(new Persona("Felipe", 9000000));
 

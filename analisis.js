@@ -24,9 +24,9 @@ function calcularMediana(lista){
         return personaMitad;
     }else{
         personaMitad =  Math.floor(mitad);
-        return lista[personaMitad];
+        return newList = lista[personaMitad];
     }
-} 
+}  
 
 
 //creamos una función para calcular la media artmética de un array
@@ -34,3 +34,26 @@ function calcularMediaAritmetica(lista){
     let total = (lista.reduce((a, b) => a + b)) / lista.length ;
     return total;
 }
+
+
+// Guardamos el resultado de la mediana de los salarios ordenados en una variable 
+const medianaGeneralCol = calcularMediana(salariosColSorted);
+
+
+//Calcular Top 10%
+function calcularTop10Col(lista){
+    let top10 = lista.splice(lista.length * 0.9, (lista.length));
+    return top10;
+}
+
+
+//Calcular mediana Top 10%
+function calcularMedianaTop10Col() {
+    calcularMediana(calcularTop10Col(salariosColSorted));
+}
+
+
+
+
+
+
